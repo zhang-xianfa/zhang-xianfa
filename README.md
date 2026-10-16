@@ -68,6 +68,11 @@ AI 应用开发　｜　数据分析与开发　｜　后端开发
   以导弹为顶点作切锥的判据，构造平滑遮蔽质量函数把不可导的布尔判定变成可优化目标，
   用差分进化 + L-BFGS-B 求解 4~40 维投放策略。**省级二等奖**。
 
+- **[wuyi-mcm-2025-c-social-media](https://github.com/zhang-xianfa/wuyi-mcm-2025-c-social-media)**　`TensorFlow` `LSTM` `scikit-learn`
+  2025 五一数学建模竞赛 C 题。分析社交媒体平台的用户—博主交互行为：逐博主训练 **BiLSTM**
+  预测新增关注，用 **LSTM + 集成学习**（随机森林 / 梯度提升）预测用户的新关注行为，
+  并按 24 个时段做活跃分布分析。**二等奖**。
+
 - **[tank-volume-correction](https://github.com/zhang-xianfa/tank-volume-correction)**　`NumPy` `SciPy` `MATLAB`
   企业横向课题（第一负责人）：油罐车变位场景下的工业计量偏差校正。建立卧式油罐储液体积几何模型
   （200×100 网格二重数值积分），以「装车体积 = 卸车体积」为物理约束逐仓拟合校正系数，
