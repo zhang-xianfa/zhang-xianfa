@@ -4,7 +4,7 @@
 
 AI 应用开发　｜　数据分析与开发　｜　后端开发
 
-**在线简历与作品集 → <https://zhang-xianfa.github.io>**　·　邮箱　1849363242@qq.com
+**在线简历与作品集 → <https://zhangxianfa.pages.dev>**　·　邮箱　1849363242@qq.com
 
 ---
 
@@ -124,6 +124,6 @@ AI 应用开发　｜　数据分析与开发　｜　后端开发
 
 ## 联系
 
-- 在线简历：<https://zhang-xianfa.github.io>
+- 在线简历：<https://zhangxianfa.pages.dev>
 - 邮箱：1849363242@qq.com
 - 微信：vx19045382689
