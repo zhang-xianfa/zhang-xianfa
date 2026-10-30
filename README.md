@@ -13,8 +13,9 @@ AI 应用开发　｜　数据分析与开发　｜　后端开发
 数据科学与大数据技术专业 2027 届本科生，GPA 3.47/4.0，专业排名前 12%。
 
 做过 **2 项企业横向课题并担任第一负责人**（煤矿采空区自燃风险预警、油罐车工业计量偏差校正），
-习惯在不完整、不规范的真实数据里把问题拆开、定位到根因。也独立完成过从数据采集、
-模型训练到服务部署的完整链路。
+习惯在不完整、不规范的真实数据里把问题拆开、定位到根因。在一家 AI 公司做过
+**企业私有知识库问答的 AI 应用实习**（RAG 基座二次开发、文档分块、评测与接口联调）。
+也独立完成过从数据采集、模型训练到服务部署的完整链路。
 
 主要方向：**LLM 应用（RAG / Agent 工作流）**、**机器学习建模**、**大数据平台开发**。
 
@@ -34,6 +35,12 @@ AI 应用开发　｜　数据分析与开发　｜　后端开发
 ## 项目
 
 ### AI 与大模型应用
+
+- **[zhitu-weknora-kb](https://github.com/zhang-xianfa/zhitu-weknora-kb)**　`RAG` `WeKnora` `Python` `Docker`　**实习 · 智途人工智能（青岛）**
+  企业私有知识库问答 POC（AI 应用实习）。以腾讯 WeKnora 为 RAG 基座做二次开发，面向企业制度与产品文档：
+  自研文档清洗与**条款感知分块**流水线（层级路径注入、表格整表不切、sha256 内容指纹幂等入库），
+  搭建**五类边界评测体系**（命中率 / 引用命中 / 误拒 / 拒答 / 延迟，负例占 33%），
+  封装带超时、指数退避、限流与熔断的 API 客户端，沉淀上线自检脚本与排查手册；21 项单测离线可跑。
 
 - **[medical-qa-rag](https://github.com/zhang-xianfa/medical-qa-rag)**　`Python` `FastAPI` `LangGraph` `PostgreSQL` `pgvector` `Docker`
   医疗 AI 多轮问诊系统。用 LangGraph 编排「安全检测 → 基础问诊 → 专家问诊 → 诊断报告」四阶段工作流；
@@ -90,9 +97,10 @@ AI 应用开发　｜　数据分析与开发　｜　后端开发
   金额合计零差异；定位 HiveServer2 查询瓶颈并开启本地执行模式，
   接口响应由 **57.2 秒降至 1.6~3.2 秒**。
 
-- **[job-crawler-analysis](https://github.com/zhang-xianfa/job-crawler-analysis)**　`curl_cffi` `Playwright` `MySQL` `Flask`
-  招聘岗位数据采集与分析平台。实现 requests / curl_cffi（TLS 指纹伪装）/ Playwright 三套请求方案
-  并实测拦截率，配合随机休眠、分页冷却与失败熔断；清洗入库后用 pandas 做分布统计与薪资分析，
+- **[job-crawler-analysis](https://github.com/zhang-xianfa/job-crawler-analysis)**　`requests` `MySQL` `Flask` `jieba`
+  招聘岗位数据采集与分析平台。基于 requests 会话（20 个浏览器请求头 + 随机休眠、分页冷却、失败熔断）
+  稳定采集青岛市岗位数据；前期对 requests / curl_cffi（TLS 指纹伪装）/ Playwright 三套方案做过
+  拦截率与成本调研，主干按部署成本选择 requests。清洗入库后用 pandas 做分布统计与薪资分析，
   jieba + WordCloud 生成技能需求词云，Flask 提供检索看板。
 
 - **[qingdao-lard-market-survey](https://github.com/zhang-xianfa/qingdao-lard-market-survey)**　`AMOS` `结构方程模型` `随机森林`
