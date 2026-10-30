@@ -45,8 +45,9 @@ AI 应用开发　｜　数据分析与开发　｜　后端开发
 - **[medical-qa-rag](https://github.com/zhang-xianfa/medical-qa-rag)**　`Python` `FastAPI` `LangGraph` `PostgreSQL` `pgvector` `Docker`
   医疗 AI 多轮问诊系统。用 LangGraph 编排「安全检测 → 基础问诊 → 专家问诊 → 诊断报告」四阶段工作流；
   「向量 + BM25」双路召回并以 RRF 融合，按来源权威度加权；封装 LLM 适配层做 embedding 三级降级、
-  四重 JSON 修复与 Pydantic 校验。后端 6036 行、8 个 REST 接口、9 张数据表，
-  24 个 E2E 用例 100% 自动化，Docker Compose 4 服务部署至腾讯云。
+  四重 JSON 修复与 Pydantic 校验。后端 4379 行（含测试 5636 行）、13 个 REST 接口、
+  4 张数据表；24 条 E2E 场景设计（15 组已固化为自动化），136 个测试函数、参数化后 152 个用例；
+  Docker Compose 4 服务部署至腾讯云。
 
 - **[fingerprint-enhancement](https://github.com/zhang-xianfa/fingerprint-enhancement)**　`PyTorch` `GAN` `OpenCV`
   潜在指纹增强 —— 多尺度 PatchGAN 条件生成对抗网络：U-Net 生成器（7 层编解码 + 跳跃连接）
@@ -88,7 +89,7 @@ AI 应用开发　｜　数据分析与开发　｜　后端开发
 - **[tank-volume-correction](https://github.com/zhang-xianfa/tank-volume-correction)**　`NumPy` `SciPy` `MATLAB`
   企业横向课题（第一负责人）：油罐车变位场景下的工业计量偏差校正。建立卧式油罐储液体积几何模型
   （200×100 网格二重数值积分），以「装车体积 = 卸车体积」为物理约束逐仓拟合校正系数，
-  处理 3303 条装卸记录，整体平均相对误差 **0.736%**。
+  处理 3487 条有效装卸记录，整体平均相对误差 **2.04%**（逐车 0.33%~3.66%）。
 
 ### 数据开发与大数据
 
